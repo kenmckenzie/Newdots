@@ -1,0 +1,169 @@
+[
+          {
+            "backlight": {
+              "device": "intel_backlight",
+              "format": "{icon} {percent}%",
+              "format-icons": [
+                "",
+                "",
+                "",
+                ""
+              ],
+              "on-scroll-down": "light -U 5",
+              "on-scroll-up": "light -A 5"
+            },
+            "battery": {
+              "format": "{icon} {capacity}%",
+              "format-charging": " {capacity}%",
+              "format-full": "{icon} {capacity}%",
+              "format-icons": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              "interval": 10,
+              "states": {
+                "critical": 10,
+                "warning": 20
+              },
+              "tooltip": false
+            },
+            "clock": {
+              "format": "{:%I:%M %p  %A %b %d}",
+              "interval": 1,
+              "tooltip": true,
+              "tooltip-format": "<tt>{calendar}</tt>"
+            },
+            "cpu": {
+              "format": " {usage}%",
+              "interval": 1
+            },
+            "custom/cava-internal": {
+              "exec": "sleep 1s && cava-internal",
+              "tooltip": false
+            },
+            "custom/launcher": {
+              "format": " ",
+              "on-click": "killall rofi || rofi -show drun -theme ~/.config/rofi/themes/nord.rasi",
+              "tooltip": false
+            },
+            "custom/wall": {
+              "on-click": "random_wallpaper",
+              "on-click-middle": "default_wall",
+              "on-click-right": "killall dynamic_wallpaper || dynamic_wallpaper &",
+              "format": " wall ",
+              "tooltip": false
+            },
+            "custom/powermenu": {
+              "format": "",
+              "on-click": "pkill rofi || ~/.config/rofi/powermenu.sh",
+              "tooltip": false
+            },
+            "idle_inhibitor": {
+              "format": "{icon}",
+              "format-icons": {
+                "activated": "",
+                "deactivated": ""
+              },
+              "tooltip": false
+            },
+            "layer": "top",
+            "memory": {
+              "format": "﬙ {percentage}%",
+              "interval": 1,
+              "states": {
+                "warning": 85
+              }
+            },
+            "modules-center": [
+              "hyprland/window"
+            ],
+            "modules-left": [
+              "custom/launcher",
+              "wlr/workspaces",
+              "temperature",
+              "custom/wall",
+              "mpd",
+              "hyprland/submap"
+            ],
+            "modules-right": [
+              "pulseaudio",
+              "backlight",
+              "memory",
+              "cpu",
+              "network",
+              "battery",
+              "clock",
+              "custom/powermenu",
+              "tray"
+            ],
+            "hyprland/submap": {
+    "format": "✌️ {}",
+    "max-length": 8,
+    "tooltip": false
+},
+            "mpd": {
+              "format": "<span foreground='#8EBBBA'></span> {title}",
+              "format-disconnected": "",
+              "format-paused": " {title}",
+              "format-stopped": "<span foreground='#bb9af7'></span>",
+              "max-length": 25,
+              "on-click": "mpc --quiet toggle",
+              "on-click-middle": "kitty --class='ncmpcpp' ncmpcpp ",
+              "on-click-right": "mpc ls | mpc add",
+              "on-scroll-down": "mpc --quiet next",
+              "on-scroll-up": "mpc --quiet prev",
+              "smooth-scrolling-threshold": 5,
+              "tooltip-format": "{title} - {artist} ({elapsedTime:%M:%S}/{totalTime:%H:%M:%S})"
+            },
+            "network": {
+              "format-disconnected": "說 Disconnected",
+              "format-ethernet": "  {ifname} ({ipaddr})",
+              "format-linked": "說 {essid} (No IP)",
+              "format-wifi": "說 {essid}",
+              "interval": 1,
+              "tooltip": false
+            },
+            "position": "top",
+            "pulseaudio": {
+              "format": "{icon} {volume}%",
+              "format-icons": {
+                "default": [
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              "format-muted": "婢 Muted",
+              "on-click": "pamixer -t",
+              "scroll-step": 1,
+              "states": {
+                "warning": 85
+              },
+              "tooltip": false
+            },
+            "temperature": {
+              "format": " {temperatureC}°C",
+              "tooltip": false
+            },
+            "tray": {
+              "icon-size": 15,
+              "spacing": 5
+            },
+            "wlr/workspaces": {
+              "format": "{icon}",
+              "on-click": "activate",
+              "active-only": false
+            },
+            "hyprland/window": {
+              "format": ">> {}",
+              "separate-outputs": true
+          }
+          }
+        ]

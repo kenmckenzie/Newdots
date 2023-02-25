@@ -95,8 +95,6 @@
             "modules-right": [
               "pulseaudio",
               "backlight",
-              "memory",
-              "cpu",
               "network",
               "battery",
               "clock",
@@ -126,7 +124,7 @@
               "format-disconnected": "說 Disconnected",
               "format-ethernet": "  {ifname} ({ipaddr})",
               "format-linked": "說 {essid} (No IP)",
-              "format-wifi": "說 {essid}",
+              "format-wifi": "說 {essid} {signalStrength}% ({ipaddr})",
               "interval": 1,
               "tooltip": false
             },

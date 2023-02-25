@@ -78,7 +78,7 @@
               "format": "﬙ {percentage}%",
               "interval": 1,
               "states": {
-                "warning": 85
+                "warning": 80 
               }
             },
             "modules-center": [
@@ -144,7 +144,7 @@
               "on-click": "pamixer -t",
               "scroll-step": 1,
               "states": {
-                "warning": 85
+                "warning": 105
               },
               "tooltip": false
             },

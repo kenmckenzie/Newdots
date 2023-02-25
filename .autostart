@@ -1,0 +1,4 @@
+pasystray &
+nm-applet --indicator &
+/usr/libexec/polkit-gnome-authentication-agent-1 &
+

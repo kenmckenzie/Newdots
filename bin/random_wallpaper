@@ -1,4 +1,5 @@
-    killall swaybg
+   #!/bin/bash 
+killall swaybg
 #    killall dynamic_wallpaper
-    swaybg -i $(find ~/Pictures/wallpaper/. -name "*.jpg" -o -name "*.png" | shuf -n1) -m fill &
+swaybg -i $(find ~/Pictures/wallpaper/. -name "*.jpg" -o -name "*.png" | shuf -n1) -m fill &
 

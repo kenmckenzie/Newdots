@@ -87,7 +87,6 @@
             "modules-left": [
               "custom/launcher",
               "wlr/workspaces",
-              "temperature",
               "custom/wall",
               "mpd",
               "hyprland/submap"
@@ -123,10 +122,11 @@
             "network": {
               "format-disconnected": "說 Disconnected",
               "format-ethernet": "  {ifname} ({ipaddr})",
-              "format-linked": "說 {essid} (No IP)",
-              "format-wifi": "說 {essid} {signalStrength}% ({ipaddr})",
+              "format-linked": "󰖩 {essid} (No IP)",
+              "format-wifi": "󰖩 {essid} {signalStrength}% ({ipaddr})",
               "interval": 1,
-              "tooltip": false
+              "tooltip": false,
+              "on-click": "rofi-wifi-menu.sh"
             },
             "position": "top",
             "pulseaudio": {
@@ -155,9 +155,20 @@
               "spacing": 5
             },
             "wlr/workspaces": {
+              "persistent_workspaces": {
+                "1": [],
+                "2": [],
+                "3": [],
+                "4": [],
+                "5": [],
+                "6": [],
+                "7": [],
+                "8": [],
+                "9": []
+            },
               "format": "{icon}",
-              "on-click": "activate",
-              "active-only": false
+              "sort-by-number": true,
+              "on-click": "activate"
             },
             "hyprland/window": {
               "format": ">> {}",

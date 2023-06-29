@@ -1,3 +1,4 @@
+# using nwg-drawer, change if using another launcher
 # If you're using rofi
 command = "nwg-drawer"
 #args = ["-show", "drun" ,"", "/home/kenmckenzie/.config/rofi/themes/nord.rasi"]

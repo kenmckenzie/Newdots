@@ -14,7 +14,7 @@ workspace = "{id}:{delim}{clients}" # {id}, {delim} and {clients} are supported
 #workspace_empty = "{id}-{name}:</span></b>{delim}{clients}"
 # client formatter
 client = "{icon}"
-client_active = "|{icon}|"
+client_active = "<span color ='darkblue'>{icon}</span>"
 
 # deduplicate client formatter
  client_fullscreen = "[{icon}]"
@@ -83,7 +83,7 @@ Signal = ""
 slack = ""
 snappergui = ""
 songrec = ""
-spotify = ""
+"[Ss]potify" = ""
 steam = ""
 streamlink-twitch-gui = ""
 sun-awt-x11-xframepeer = ""
@@ -115,8 +115,8 @@ DEFAULT = ""
 "(?i)neomutt" = "neomutt"
 
 [title_active."(?i)firefox"]
-"(?i)twitch" = "<span color='purple'>--</span>"
-"(?i)youtube" = "<span color='red'>-󰗃-</span>"
+"(?i)twitch" = "<span color='purple'></span>"
+"(?i)youtube" = "<span color='red'>󰗃</span>"
 # Add your applications that need to be exclude
 # The key is the class, the value is the title.
 # You can put an empty title to exclude based on

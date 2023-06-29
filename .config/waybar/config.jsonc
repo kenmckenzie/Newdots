@@ -88,7 +88,6 @@
               "custom/launcher",
               "wlr/workspaces",
               "custom/wall",
-              "mpd",
               "hyprland/submap"
             ],
             "modules-right": [
@@ -123,10 +122,11 @@
               "format-disconnected": "說 Disconnected",
               "format-ethernet": "  {ifname} ({ipaddr})",
               "format-linked": "󰖩 {essid} (No IP)",
-              "format-wifi": "󰖩 {essid} {signalStrength}% ({ipaddr})",
+              "format-wifi": "󰖩 {essid} {signalStrength}% ",
+              "format-alt": "{ifname}: {ipaddr}/{cidr}",
               "interval": 1,
               "tooltip": false,
-              "on-click": "rofi-wifi-menu.sh"
+              "on-click-right": "rofi-wifi-menu.sh"
             },
             "position": "top",
             "pulseaudio": {
